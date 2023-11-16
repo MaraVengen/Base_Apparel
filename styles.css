@@ -84,6 +84,19 @@ input {
   border: none;
   padding: 10px;
   padding-left: 12px;
+  outline: none;
+}
+
+.validity-message {
+  margin-left: 8rem;
+}
+
+.error {
+  color: var(--Soft-Red);
+}
+
+.success {
+  color: lightseagreen;
 }
 
 /* .btn {
@@ -133,6 +146,16 @@ input {
   line-height: 25px;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Josefin Sans";
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /* .hero_main .hero_head {
 } */
 
@@ -141,17 +164,22 @@ input {
 }
 
 @media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
   .desktop_img {
+    width: 100%;
     display: block;
+    flex: 30%;
   }
 
   .mobile_img {
     display: none;
     z-index: -1;
-  }
-
-  .container {
-    display: flex;
   }
 
   .logo {
@@ -163,6 +191,7 @@ input {
     /* margin-left: 7rem; */
     display: flex;
     flex-direction: column;
+    flex: 70%;
   }
 
   .hero {
